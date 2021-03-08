@@ -1,0 +1,20 @@
+﻿@inherits LayoutComponentBase
+
+<div id="topBar">
+    <a href="/">
+        <h1><i class="oi oi-monitor" />Me.NET</h1>
+    </a>
+</div>
+<div id="main">
+    <div id="leftPanel">
+        <NavMenu />
+    </div>
+    <div id="middlePanel">
+        <div id="content">
+            @Body
+        </div>
+        <footer>
+            Jacek Jachimczyk 2021
+        </footer>
+    </div>
+</div>

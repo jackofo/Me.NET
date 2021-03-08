@@ -1,0 +1,101 @@
+body
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #2d2d30;
+    color: #dcdcdc;
+}
+
+a
+{
+    color: #dcdcdc;
+}
+
+#topBar, #leftPanel
+{
+    box-shadow: 2px 2px 4px #000000 ;
+}
+
+#leftPanel, #middlePanel
+{
+    height: calc(100vh - 10vh);
+}
+
+#topBar, #leftPanel, #content
+{
+    padding: 1vw;
+}
+
+#main, #leftPanel, #middlePanel
+{
+}
+
+#topBar
+{
+    width: 100%;
+    height: 10vh;
+    background-color: #1e1e1e;
+}
+
+#main
+{
+    width: 100%;
+}
+
+#leftPanel
+{
+    background-color: #252526;
+}
+
+#middlePanel
+{
+    overflow: auto;
+}
+
+footer
+{
+    padding: 1vw;
+    text-align: center;
+    background-color: #000000;
+    width: 84vw;
+}
+
+@media only screen and (min-width: 802px)
+{
+    #topBar, #leftPanel
+    {
+    }
+
+    #leftPanel, #middlePanel
+    {
+    }
+
+    #leftPanel
+    {
+        width: 16vw;
+        float: left;
+    }
+
+    #middlePanel
+    {
+        width: 84vw;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 801px)
+{
+    #leftPanel
+    {
+        width: 100%;
+    }
+
+    #middlePanel
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        width: 100vw;
+    }
+}
